@@ -1,0 +1,9 @@
+@media (min-width:1420px) {
+    .col-md-4 {
+        margin-top: 1vh;
+    }
+    
+}
+.col-md-4 {
+    margin-top: 1vh;
+}

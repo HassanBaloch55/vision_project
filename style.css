@@ -1,0 +1,688 @@
+
+*{
+  margin: 0%;
+  padding: 0%;
+}
+.body{
+  margin: 0%;
+  padding: 0%;
+  background-color: #03756c;
+}
+/*header section*/
+.hero_area {
+  position: relative;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.sub_page .hero_area {
+  min-height: auto;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.header_section {
+    padding: 15px 0;
+    margin-bottom: 1px;
+    background-color: #272929;
+}
+
+.header_section .container-fluid {
+  padding-right: 25px;
+  padding-left: 25px;
+ 
+}
+
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar-brand span {
+  font-weight: bold;
+  font-size: 32px;
+  color: #000000;
+}
+
+.custom_nav-container {
+  padding: 0;
+}
+
+.custom_nav-container .navbar-nav {
+  margin-left: auto;
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+    padding: 5px 20px;
+    color: #fffcfc;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    font-weight: 700;
+   
+}
+
+
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
+  color: #f7444e;
+}
+.custom_nav-container .nav_search-btn:hover {
+  color: #f7444e;
+}
+
+.custom_nav-container .navbar-toggler {
+  outline: none;
+}
+
+.custom_nav-container .navbar-toggler {
+  padding: 0;
+  width: 37px;
+  height: 42px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.custom_nav-container .navbar-toggler span {
+  display: block;
+  width: 35px;
+  height: 4px;
+  background-color: #ffffff;
+  margin: 7px 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.custom_nav-container .navbar-toggler span::before, .custom_nav-container .navbar-toggler span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  top: -10px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.custom_nav-container .navbar-toggler span::after {
+  top: 10px;
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span::before, .custom_nav-container .navbar-toggler[aria-expanded="true"] span::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 0;
+}
+.dropdown-menu{
+  background-color: #000000;
+}
+.dropdown-menu li  {
+  color: #003fb3;
+ text-align: center;
+}
+.dropdown-menu li a  {
+  color: #003fb3;
+ 
+}
+/*end header section*/
+
+/* start section search bar image */
+.info-section {
+  background-color: #e6e3e3;
+  padding: 100px 0;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.info-section p{
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+}
+
+.search-bar input {
+  display: flex;
+  border-radius: 20px;
+  width: 50%;
+}
+.search-bar button {
+  border-radius: 20px;
+  margin-left: 10px;
+}
+ /* end section search bar img */
+/* Heading Section */
+.heading{
+  text-align: center;
+  position: relative;
+  margin: 3vh;
+  color: white;
+}
+.heading span {
+  color: rgb(254, 255, 255);
+  
+}.heading span::before{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 5%;
+  height: 5px;
+  background-color: black;
+  background: red;
+}
+/*  End Heading Section */
+
+ /* course section/ */
+.Course-img{
+  height: 200px;
+  width: 100%;
+}
+.Course-detail {
+  text-align: center;
+  border-radius: 5px;
+  border: 0.1px solid rgb(216, 211, 211);
+  position: relative;
+  margin: 2vh 0 ;
+  box-shadow: 1px 1px 1px 1px rgb(172, 167, 167);
+  background-color: rgb(255, 255, 255);
+  padding: 1vh 1vw;
+}
+.Course-detail h5  a{ 
+  color: #000000;
+  margin: 2vh 1vw;
+}
+.Course-detail h5 a:hover{
+   text-decoration: none;
+   color: #03145f;
+}
+.price-btn{
+  display: flex;
+  justify-content: space-between;
+  margin: 1vh 2vw;
+  text-underline-position: auto;
+
+}
+.price-btn p {
+  font-size: 1em;
+}
+.rating .fa-star{
+  color: rgb(236, 119, 9);
+  font-size: 0.8em;
+}
+.detail-img{
+  height: 30vh;
+  width: 80%;
+  transform: translate(15%, 0%);
+}
+.payment-form{
+  width: 70%;
+  padding: 2vh 10vw;
+  background-color: rgb(2, 116, 59);
+  border: 1px solid red;
+  position: absolute;
+  display: none;
+  z-index: 99;
+  margin-left: 10vw;
+}
+.payment-form label {
+  color: #e6e3e3;
+  font: bold;
+}
+.payment-form h2 {
+  color: #e6e3e3;
+  text-align: center;
+  margin: 2vh;
+}
+ .pay-btn {
+  background-color: #003fb3;
+  color: white;
+  margin: 2vh;
+  margin-left: 10vw;
+  padding: 1vh 3vw;
+  border-radius: 10px;
+}
+.course-details{
+  height: auto;
+  width: 100%;
+  border: 1px dashed green;
+  background-color: bisque;
+  padding: 2vh 2vw;
+}
+.course-description{
+  margin: 1vh 10vw;
+}
+.course-description .Enroll-btn{
+  background-color: #003fb3;
+  color: white;
+  margin: 2vh 1vw;
+  padding: 1vh 3vw;
+  border-radius: 10px;
+}
+.course-details h5{
+  font-size: 1.5em;
+align-items: flex-start;
+}
+.course-details details{
+font-size: 1em;
+
+}
+#ms-office{
+display: none;
+}
+#webdesign{
+display: none;
+}
+#webdeve{
+  display: none;
+}
+#php-deve{
+  display: none;
+}
+#Hide{
+  padding: 1vh 1vw;
+  border: 1px solid black;
+  font-size: 1.4em;
+  background-color: #14477a;
+  color: #e6e3e3;
+  border-radius: 50%;
+  cursor:pointer;
+}
+/* End Course Section */
+
+/* start live webinar css */
+.event {
+  background-color: rgb(236, 151, 24);
+  margin-bottom: 2vh;
+  border-radius: 5px;
+}
+.event  {
+text-align: center;
+color: rgb(12, 1, 172);
+padding: 5vh 1vw;
+font-size: 1.2em;
+line-height: 30px;
+}
+.event small {
+position: relative;
+color: white;
+font-size: 1em;
+}
+.event .span{
+  border: 1px solid white;
+  background-color: black;
+  color: #fffefe;
+  font-size: 1em;
+  padding: 5px 5px ;
+  border-radius: 5px;
+}
+.date{
+display: flex;
+margin: 5vh 1vw ;
+justify-content:space-around;
+}
+.date b {
+ color: white;
+ font-weight: 600;
+ font-style: oblique;
+ margin-top: 10px;
+}
+.day{
+padding: 0.5vh 0.5vw;
+color: rgb(10, 64, 146);
+border: 1px solid rgb(216, 109, 21);
+}
+.timer span {
+ display: inline-block;
+ min-width: 100px;
+}
+.time-status span{
+ padding-left: 70px;
+ margin-top: -100px;
+}
+.count{
+ margin-top: 1vh;
+ padding: 1vh 1vw;
+ color: white;
+ text-align: center;
+ background-color: black;
+ border-radius: 3px;
+}
+.sign-up form{
+ width: 100%;
+ padding:1vh 1vw;
+  border-radius: 5px;
+ border: 1px solid white;
+ background-color: #14477a;
+ 
+}
+.sign-up form h5 {
+ text-align: center;
+ font-size: 2em;
+ font: bolder;
+ color: white;
+ margin: 2.8vh;
+}
+.sign-up form input{
+ width: 80%;
+ margin-bottom: 1vh;
+ padding: 8px 8px ;
+ background-color: rgb(255, 255, 255);
+ margin-left: 10%;
+}
+.sign-up input::placeholder{
+ color: rgb(8, 8, 8);
+ cursor: grab;
+}
+.sign-up .btn {
+ padding: 0.5vh 0.5vw ;
+ justify-content: center;
+ margin-left: 9vw;
+ width: 50%;
+ font-size: 1.5em;
+ border-radius: 5px;
+ margin-top: 1vh;
+ color: white;
+ background-color: rgb(216, 84, 84);
+}
+/* End css live webinars sections */
+ /* start css Register and login Form section */
+ #Register{
+  width: 50%;
+  padding: 2vh 2vw;
+  margin-top: 2vh ;
+  color: white;
+  border: 1px solid black;
+  background-color: rgb(2, 116, 59);
+}
+.Register-form{
+  margin: 1vh 1vw;
+}
+.Register-form input{
+  margin-bottom: 0.5vh;
+}
+.Register-form h2 {
+  text-align: center;
+}
+.Register-btn {
+ background-color: rgb(11, 46, 201);
+ color: #ffffff;
+ border-radius: 10px;
+ width: 20%;
+ margin: 1vh ;
+ margin-left: 15vw;
+}
+.login-form{
+  width: 50%;
+  padding: 2vh 2vw;
+  justify-content: center;
+  margin: 2vh  18vw;
+  color: white;
+  border: 1px solid black;
+  background-color: rgb(2, 116, 59);
+}
+.login-form h2 {
+  text-transform: capitalize;
+  text-align: center;
+}
+.login-btn{
+  background-color: rgb(11, 46, 201);
+ color: #ffffff;
+ border-radius: 10px;
+ width: 20%;
+ margin: 1vh ;
+ margin-left: 13vw;
+}
+/* End  css Register and login Form section */
+/* css section  Students testimonials*/
+
+.testimonails{
+  position: relative;
+  height: auto;
+  width: 100%;
+  top: 5vh;
+  }
+  .slider {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #03145f;
+  margin-bottom: 7vh;
+  }
+  
+  .slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  
+  }
+  
+  .slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 3vh 2vh;
+  text-align: center;
+  }
+  .slide .Testimonial-pic{
+    height: 15vh;
+    width: 15vw;
+    border-radius: 50%;
+  }
+  
+  .slide p {
+  font-size: 1.2em;
+  margin-bottom: 1vh;
+  color: white;
+  }
+  
+  .slide h1 {
+  font-size: 16px;
+  color: #ffffff;
+  }
+  
+  button {
+  position: relative;
+  top: 20%;
+  padding: 3px 3px ;
+  background-color: rgb(214, 119, 56);
+  color:#03145f ;
+  font-size: 1.5em;
+  }
+  .slider-btns{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh 2vw;
+  }
+  .slider-btns h1 {
+  color: white;
+  }
+  /*  End css section  Students testimonials*/
+  /* start css .subscribe */
+
+.subscribe{
+  height:auto;
+  width: 100%;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  text-align: center;
+  position: relative;
+  background-color: rgb(214, 196, 173);
+  }
+  .stay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .stay i {
+  margin-top: 1vh;
+  font-size: 2.5em;
+  }
+  .stay span h1{
+  color: #ca4009;
+  }
+  .subscribe p {
+  width: 50%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 25%;
+  text-align: center;
+  text-transform: capitalize;
+  }
+  .sub-form input{
+  width: 40%;
+  margin: 2vh 0 0 2vh;
+  padding: 10px 10px;
+  background-color: rgb(245, 245, 245);
+  }
+  .sub-form input::placeholder{
+  font-size: 1em;
+  color: rgb(23, 23, 24);
+  }
+  .sub-form button {
+  font-size: 1.0.2em;
+  padding: 10px 10px;
+  color: white;
+  background-color: rgb(5, 148, 136);
+  }
+  .sub-form button:hover{
+    color: rgb(41, 33, 33);
+    background-color: rgb(22, 226, 175);
+    transition: 1s;
+    }
+  
+  .text p{
+    width: 55%;
+    font: bolder;
+    font-size: 1.2em;
+    color: rgb(255, 254, 254);
+    padding: 1vh;
+    margin-top: 2vh;
+    line-height: 5vh;
+  }
+  .text button {
+  padding: 1vh 1vw;
+  font-size: 1.2em;
+  border-radius: 5px;
+  background: linear-gradient(160deg, red , green ,blue , rgb(34, 34, 20));
+  
+  color: white;
+  outline:10px;
+  cursor:pointer;
+  outline-style: hidden;
+  }
+  /* End Subscribe section */
+  /* css section our teacher */
+  .teacher-card img {
+    height: 200px;
+    width: 100%;
+}
+.our-teachers h5 {
+  margin: 1vh 2vw;
+}
+.our-teachers p {
+  margin: 1vh 2vw;
+}
+ /*  End css section our teacher */
+/* why section css */
+.card-body {
+  height: 20vh;
+  width: 100%;
+  background-color: rgb(2, 116, 59);
+  color: #ffffff;
+}
+.icon-img{
+  margin: 2vh;
+ text-align: center;
+ border-radius: 50%;
+}
+.i-img{
+ height: 100px;
+ width: 100px;
+}
+/* end why section css */
+ /* css footer section */
+ .footer {
+  background-color: #0dc469;
+  padding: 40px 0;
+}
+.footer .footer-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+ 
+}
+.footer .footer-links a {
+  display: block;
+  color: #fdfdfd;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.footer .footer-links a:hover {
+  color: #b31500;
+  text-decoration: underline;
+}
+.footer .social-icons a {
+  color: #6c757d;
+  margin-right: 10px;
+  font-size: 24px;
+}
+.footer .social-icons a:hover {
+  color: #ee520a;
+}
+/* end footer section */
+.blog{
+  height: auto;
+  width: 100%;
+  background-color: rgb(6, 134, 85);
+  color: #000000;
+  border: 1px solid rgb(170, 166, 166);
+  margin-bottom: 2vh;
+   
+}
+.blog h6 {
+  margin: 0.5vh 3vw;
+  color: white;
+}
+.blog-items span{
+  position: relative;
+  justify-content: space-evenly;
+  margin: 1vh 2vw;
+  font-size: 1em;
+}
+.blog-items span a{
+  color: #fefffe;
+} 
+.blog-img {
+  height: 200px;
+  width: 80%;
+ margin: 1vh 2vw;
+}
+.icon-img{
+   text-align: center;
+  border-radius: 50%;
+  margin: 2vh;
+}
+.i-img{
+  height: 100px;
+  width: 100px;
+}
