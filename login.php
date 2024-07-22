@@ -1,5 +1,5 @@
 
-<?php
+<!-- <?php
 include("connect.php");
 session_start();
  if(isset($_POST["submit"])){
@@ -22,7 +22,7 @@ if(isset($_REQUEST['logout.php'])){
     session_destroy();
 
 }
-?>
+?> -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -39,65 +39,53 @@ if(isset($_REQUEST['logout.php'])){
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body class="body">
-    <div class="hero_area">
-      <!-- header section -->
-      <header class="header_section">
-         <div class="container">
-            <nav class="navbar navbar-expand-lg custom_nav-container ">
-              <h2 class="text-white">Reads-info</h2>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class=""> </span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav">
-                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Pages <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                           <li><a href="about-us.html">About Us</a></li>
-                           <li>
-                              <a  href="contactus.html">Contact Us</a>
-                           </li>
-                           <li><a href="testimonial.html">Testimonial</a></li>
-                        </ul>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="blog_list.html">Blog</a>
-                     </li>
-                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Account <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                           <li><a href="login.php">Login</a></li>
-                           <li>
-                              <a  href="Register.php">Register</a>
-                           </li>
-                        </ul>
-                     </li>
-                   </li>
-                  </ul>
-               </div>
-            </nav>
-         </div>
-      </header>
-         <!-- End  header section-->
+  <?php
+    include 'Navbar.php';
+    ?>
       <!-- start login section  -->
-      <div class="col-12">
-            <div class="container" id="login">
-                <form action="" class="login-form" id="form" method="Post">
-                    <h2>
-                          Login 
-                    </h2>
-                       <label for="">Email</label> <br>
-                       <input type="email" name="Email" placeholder=" Your Email @" class="form-control">
-                        <label for="">Password</label> <br>
-                        <input type="password" name="Password" placeholder="password" class="form-control"> <br>
-        
-                    <button class="login-btn" type="submit"  onclick=" return validateForm()" value="submit" > Submit </button>
-                </form>
-             </div>
-          </div>
+
+       <section class="container">
+         <div class="row">
+            <div class="col-md-12  mt-5" style="display: flex; flex-wrap: wrap;">
+               <form action="" class="login-form" id="form" method="Post">
+                  <h2>
+                        Login 
+                  </h2>
+                     <label for="">Email</label> <br>
+                     <input type="email" name="Email" placeholder=" Your Email @" id="email"> 
+                      <i class="fa fa-user" aria-hidden="true" id="user"></i> <br>
+                      <label for="">Password</label> <br>
+                      <input type="password" id="password" name="Password" placeholder="password">
+                        <i class="fa fa-eye" aria-hidden="true" id="show"></i> <br> 
+                       <span> <input type="checkbox" name="" id=""> Remember Me</span> <br>
+                    <input type="submit"  class="login-btn" value="Login"> <br>
+                   <span><a href="">Forget Your Password</a></span>
+              </form>
+              <div class="regster">
+                     <h1>Register</h1><br>
+                     <h6>Don't hava an Account? Register One </h6>
+                     <button><a href="Register.php">Register an Account</a></button>
+              </div>
+    </div>
+            <div class="col-md-6"></div>
+         </div>
+       </section>
+                
+          <script>
+             // PASSWORD HIDE OR SHOW METHOD
+       let password = document.getElementById("password")
+       let show = document.getElementById("show")
+       show.onclick = function (){
+        if (password.type === "password"){
+            password.type = "text"
+           
+        }
+        else {
+            password.type = "password"
+        }
+    }
+
+          </script>
           <!-- end register form section -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -197,14 +197,18 @@
 }
 .Course-detail {
   text-align: center;
-  border-radius: 5px;
-  border: 0.1px solid rgb(216, 211, 211);
   position: relative;
   margin: 2vh 0 ;
   box-shadow: 1px 1px 1px 1px rgb(172, 167, 167);
   background-color: rgb(255, 255, 255);
+  transform:scale(0);
   padding: 1vh 1vw;
 }
+.Course-detail:hover{
+  border: 0.5px solid rgb(6, 32, 105);
+  transform: scale(3);
+}
+
 .Course-detail h5  a{ 
   color: #000000;
   margin: 2vh 1vw;
@@ -408,9 +412,10 @@ border: 1px solid rgb(216, 109, 21);
   width: 50%;
   padding: 2vh 2vw;
   margin-top: 2vh ;
-  color: white;
+  color: rgb(0, 0, 0);
   border: 1px solid black;
-  background-color: rgb(2, 116, 59);
+  box-shadow: 2px 2px  rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
 }
 .Register-form{
   margin: 1vh 1vw;
@@ -429,14 +434,26 @@ border: 1px solid rgb(216, 109, 21);
  margin: 1vh ;
  margin-left: 15vw;
 }
-.login-form{
+ .login-form{
   width: 50%;
-  padding: 2vh 2vw;
-  justify-content: center;
-  margin: 2vh  18vw;
-  color: white;
-  border: 1px solid black;
-  background-color: rgb(2, 116, 59);
+  padding: 5vh 5vw;
+  color: rgb(0, 0, 0);
+  border-radius:5px 0 0 5px;
+  border: 1px solid rgb(146, 146, 146);
+  background-color: rgb(255, 255, 255);
+}
+.login-form label{
+  font-weight: bolder;
+}
+.login-form #password, #email{
+  width: 90%;
+  padding: 10px 10px;
+}
+#show{
+  margin-left: -3vw;
+}
+#user{
+  margin-left:  -3vw;
 }
 .login-form h2 {
   text-transform: capitalize;
@@ -446,9 +463,35 @@ border: 1px solid rgb(216, 109, 21);
   background-color: rgb(11, 46, 201);
  color: #ffffff;
  border-radius: 10px;
- width: 20%;
- margin: 1vh ;
- margin-left: 13vw;
+ width: 30%;
+ margin: 2vh 10vw;
+ padding: 1vh 2vw;
+ border: none;
+} 
+.login-btn:hover{
+  background-color:  green;
+  transition: 1s ease;
+}
+.regster{
+  background-color: red;
+  padding: 0vh 5vw;
+  width: 50%;
+  color: white;
+  text-align: center;
+  border-radius:0px 5px  5px 0px;
+}
+.regster h1{
+  margin-top:5vh ;
+}
+.regster h6{
+  margin: 1vh ;
+}
+.regster button{
+  background-color: white;
+  padding: 1vh 5vw ;
+  outline: none;
+  border: none;
+  border-radius: 5px;
 }
 /* End  css Register and login Form section */
 /* css section  Students testimonials*/

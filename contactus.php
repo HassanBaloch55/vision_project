@@ -20,12 +20,14 @@
     }
     .contact-form{
       background-color: rgb(2, 116, 59);
-      color: white;
+      color: black;
       border-bottom: none;
       padding: 2vh 2vw;
+      background-color: white;
+      margin-bottom: 5vh;
     }
     .btn-primary {
-      background-color: #bb0971;
+      background-color: blue;
       border: none;
       border-radius: 5px;
       padding: 10px 20px;
@@ -77,7 +79,7 @@
    font-weight: bold;
  }
   </style>
-<body>
+<body class="body">
   <section class="container">
     <div class="col-md-12">
       <div class="contact-us-text">

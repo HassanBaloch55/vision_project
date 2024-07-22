@@ -33,7 +33,7 @@
                         <ul class="dropdown-menu">
                            <li><a href="about-us.html">About Us</a></li>
                            <li>
-                              <a  href="contactus.html">Contact Us</a>
+                              <a  href="contactus.php">Contact Us</a>
                            </li>
                            <li><a href="testimonial.html">Testimonial</a></li>
                         </ul>
